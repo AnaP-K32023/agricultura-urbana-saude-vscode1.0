@@ -1,0 +1,72 @@
+DASHBOARD HORTAS INICIO EM 05/12/2025- ia deepseek
+=====================================
+
+comando: streamlit run NOME_DO_ARQUIVO.py
+
+dica do Jorge- pedir canto superior D para atualizar sozinho:alw... não acho o botão.
+
+
+Pensar um google forms para atualizar o dashboard interativo
+
+Responsável
+Ativa ou não , 
+últimos 3 meses
+quais fitoterápicos:
+quais hortaliças
+área total cultivada
+Engajamento pessoal: profissional/ comunidade
+
+
+1-Substitua a função carregar_dados() para ler de:
+
+Banco de dados
+
+Planilha Excel/CSV
+
+API da prefeitura
+
+2-Ajuste os campos conforme sua estrutura de dados real
+
+3-Adicione mais funcionalidades conforme necessário (exportação, relatórios, etc.)
+
+Este dashboard fornece uma visão geral do programa de hortas nos centros de saúde, permitindo monitoramento e tomada de decisões baseadas em dados.
+
+> ipconfig
+>>
+>> # Procure por:
+>> # IPv4 Address. . . . . . . . . . . : 192.168.X.X  (GERALMENTE É ESSE)
+>> # ou
+>> # IPv4 Address. . . . . . . . . . . : 10.0.X.X
+
+Versão atualizada que mostra como acessar na rede:
+
+__________________
+METADADOS PMF:
+https://geoportal.pmf.sc.gov.br/downloads/camadas-em-sig-do-mapa
+-------------
+Google Forms:
+
+--->>>>>> ideiassss
+
+de repente pensar em possíveis email que se as respostas virem desses e-mail, atualiza automaticamente.
+E daí eu teria de atualizar os que deram erro, somente.! 
+----------------------------------
+
+
+https://www.pmf.sc.gov.br/arquivos/arquivos/pdf/15_03_2021_17.48.18.f8f2062fafe4f181cce7c3a5e7c8e655.pdf#page=93
+Guia de Plantas Medicinais de Florianópolis
+
+*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*
+
+IDEIASSSS... como esta por CS o "Hortas CS- mapeamento 2025"- talvez de pra colocar no dashboard
+ (qdo foram as datas da manutenção e composto extra)
+
+*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*
+2026
+
+1-streamlit run 2026.py (precisa funcionar)
+1-local:http://localhost:8502 funciona no brave e no google
+2-como acessar via IP da PMF:http://172.17.6.68:8501 SMS 17
+
+MAPA
+

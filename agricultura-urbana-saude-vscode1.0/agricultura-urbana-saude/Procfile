@@ -1,0 +1,1 @@
+web: gunicorn hortas_dash:app

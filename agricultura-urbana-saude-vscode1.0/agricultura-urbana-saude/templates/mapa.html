@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Mapa - Agricultura Urbana-Saúde{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/mapa.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+  <div class="row"><div class="col-12"><h2 class="section-title"><i class="fas fa-map-marked-alt me-2"></i>Mapa das Hortas nos CS e CAPS</h2></div></div>
+  <div class="row mb-3"><div class="col-12 filter-container" data-filter-group="mapa">
+    <button class="filter-btn active" data-filter="all">Todos</button>
+    <button class="filter-btn" data-filter="ativa">Ativas</button>
+    <button class="filter-btn" data-filter="inativa">Inativas</button>
+    <button class="filter-btn" data-filter="Norte">Norte</button>
+    <button class="filter-btn" data-filter="Sul">Sul</button>
+    <button class="filter-btn" data-filter="Centro">Centro</button>
+  </div></div>
+  <div class="row"><div class="col-12"><div id="map"></div></div></div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/mapa.js') }}"></script>
+{% endblock %}

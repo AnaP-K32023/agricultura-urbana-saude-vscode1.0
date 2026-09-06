@@ -1,0 +1,54 @@
+/* =========================
+   ESTILOS GERAIS DO PROJETO
+   ========================= */
+:root {
+  --verde-escuro: #1b5e20;
+  --verde-medio: #2e7d32;
+  --verde-primario: #388e3c;
+  --verde-claro: #4caf50;
+  --verde-muito-claro: #81c784;
+  --verde-pastel: #c8e6c9;
+  --terra: #795548;
+  --flor-rosa: #e91e63;
+  --flor-amarelo: #ffc107;
+  --flor-laranja: #ff9800;
+  --flor-azul: #2196f3;
+  --branco: #ffffff;
+  --cinza-claro: #f5f5f5;
+  --gradient-verde: linear-gradient(135deg, #1b5e20, #4caf50);
+}
+
+* { font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
+body { background-color: #f8f9fa; }
+
+.navbar-custom { background: var(--gradient-verde); box-shadow: 0 4px 20px rgba(27, 94, 32, .3); }
+.navbar-custom .navbar-brand { color: var(--branco); font-weight: 700; font-size: 1.5rem; }
+.navbar-custom .navbar-brand i { color: var(--flor-amarelo); }
+.navbar-custom .nav-link { color: rgba(255,255,255,.9) !important; font-weight: 500; }
+.navbar-custom .nav-link:hover { color: var(--branco) !important; background: rgba(255,255,255,.15); border-radius: 20px; }
+.navbar-toggler { border-color: rgba(255,255,255,.5); }
+.navbar-toggler-icon { filter: brightness(0) invert(1); }
+
+.btn-verde { background: var(--gradient-verde); color: var(--branco); border: none; padding: 8px 25px; border-radius: 50px; font-weight: 600; transition: all .3s; }
+.btn-verde:hover { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(76,175,80,.4); color: var(--branco); }
+
+.card-horta { border-radius: 15px; border: none; box-shadow: 0 4px 20px rgba(0,0,0,.08); transition: all .3s; margin-bottom: 20px; overflow: hidden; }
+.card-horta:hover { transform: translateY(-5px); box-shadow: 0 8px 30px rgba(76,175,80,.15); }
+.card-horta .card-header { background: var(--gradient-verde); color: var(--branco); font-weight: 600; border: none; }
+
+.badge-ativa, .badge-inativa, .badge-grupo, .badge-multirao { display: inline-block; color: var(--branco); padding: 5px 15px; border-radius: 20px; font-size: .8rem; }
+.badge-ativa { background: var(--verde-claro); }
+.badge-inativa { background: #dc3545; }
+.badge-grupo { background: var(--flor-azul); }
+.badge-multirao { background: var(--flor-laranja); }
+
+.footer-custom { background: var(--gradient-verde); color: var(--branco); padding: 2rem 0; margin-top: 3rem; }
+.footer-custom a { color: rgba(255,255,255,.8); text-decoration: none; }
+.footer-custom a:hover { color: var(--branco); }
+
+.section-title { color: var(--verde-escuro); font-weight: 700; margin-bottom: 2rem; position: relative; padding-bottom: 10px; }
+.section-title::after { content: ""; position: absolute; bottom: 0; left: 0; width: 60px; height: 3px; background: var(--gradient-verde); border-radius: 10px; }
+.text-center.section-title::after { left: 50%; transform: translateX(-50%); }
+
+.filter-btn { margin: 3px; border-radius: 25px; padding: 5px 15px; border: 2px solid var(--verde-claro); background: transparent; color: var(--verde-escuro); transition: all .3s; font-size: .85rem; }
+.filter-btn:hover, .filter-btn.active { background: var(--verde-claro); color: var(--branco); }

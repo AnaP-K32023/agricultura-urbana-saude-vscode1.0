@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}Início - Hortas nos Centros de Saúde e CAPS{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+  <section class="hero-home text-center py-5">
+    <h1 class="display-4 fw-bold hero-title">
+      <i class="fas fa-seedling"></i>
+      Hortas nos Centros de Saúde e CAPS
+    </h1>
+    <p class="lead text-muted">Conectando comunidades através de hortas medicinais nos Centros de Saúde e CAPS de Florianópolis</p>
+    <a href="{{ url_for('mapa') }}" class="btn btn-verde btn-lg mt-3">
+      <i class="fas fa-map-marked-alt me-2"></i>Ver Mapa das Hortas
+    </a>
+  </section>
+
+  <section class="row mt-4 home-cards">
+    <div class="col-md-4">
+      <div class="card-horta">
+        <div class="card-header"><i class="fas fa-users me-2"></i>Comunidade</div>
+        <div class="card-body"><p>Hortas comunitárias que promovem saúde e bem-estar.</p><span class="badge-ativa">Ativa</span></div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card-horta">
+        <div class="card-header"><i class="fas fa-leaf me-2"></i>Plantas Medicinais</div>
+        <div class="card-body"><p>Diversas espécies de plantas medicinais cultivadas.</p><span class="badge-grupo"><i class="fas fa-users me-1"></i>Grupo</span></div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card-horta">
+        <div class="card-header"><i class="fas fa-calendar-alt me-2"></i>Eventos</div>
+        <div class="card-body"><p>Mutirões e encontros semanais para cuidar das hortas.</p><span class="badge-multirao"><i class="fas fa-calendar me-1"></i>Mutirão</span></div>
+      </div>
+    </div>
+  </section>
+</div>
+{% endblock %}

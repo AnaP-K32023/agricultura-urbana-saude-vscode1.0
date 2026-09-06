@@ -1,0 +1,85 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4265,
+          -27.4835
+        ]
+      },
+      "properties": {
+        "nome": "CS Rio Vermelho",
+        "regiao": "Norte",
+        "ativa": true,
+        "responsavel": "Jardim Saúde Ativa",
+        "plantas_medicinais": "Erva baleeira, Espinheira santa, Boldo, Hortelã",
+        "dia_grupo_horta": "Quarta-feira 14h",
+        "multirao": "15/07/2026",
+        "data_atualizacao": "2026-06-15"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4781,
+          -27.4532
+        ]
+      },
+      "properties": {
+        "nome": "CS Barra da Lagoa",
+        "regiao": "Norte",
+        "ativa": true,
+        "responsavel": "Maria Silva",
+        "plantas_medicinais": "Hortelã, Boldo, Melissa, Alecrim",
+        "dia_grupo_horta": "Terça-feira 09h",
+        "multirao": "Não",
+        "data_atualizacao": "2026-06-10"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4821,
+          -27.6823
+        ]
+      },
+      "properties": {
+        "nome": "CS Campeche",
+        "regiao": "Sul",
+        "ativa": true,
+        "responsavel": "Carlos Alberto",
+        "plantas_medicinais": "Erva baleeira, Manjericão, Alfavaca",
+        "dia_grupo_horta": "Sexta-feira 16h",
+        "multirao": "20/07/2026",
+        "data_atualizacao": "2026-06-12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5221,
+          -27.5823
+        ]
+      },
+      "properties": {
+        "nome": "CS Trindade",
+        "regiao": "Centro",
+        "ativa": false,
+        "responsavel": "Fernanda Lima",
+        "plantas_medicinais": "Guaco, Boldo, Alfavaca",
+        "dia_grupo_horta": "",
+        "multirao": "",
+        "data_atualizacao": "2026-06-01"
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}Hortas - Agricultura Urbana-Saúde{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/hortas.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+  <h2 class="section-title text-center">Nossas Hortas</h2>
+  <p class="text-center text-muted mb-4">Conheça as hortas comunitárias nos Centros de Saúde e CAPS.</p>
+
+  <div class="filter-container text-center mb-4" data-filter-group="hortas">
+    <button class="filter-btn active" data-filter="todos">Todos</button>
+    <button class="filter-btn" data-filter="ativas">Ativas</button>
+    <button class="filter-btn" data-filter="inativas">Inativas</button>
+    <button class="filter-btn" data-filter="Norte">Norte</button>
+    <button class="filter-btn" data-filter="Sul">Sul</button>
+    <button class="filter-btn" data-filter="Centro">Centro</button>
+  </div>
+
+  <div class="row" id="lista-hortas">
+    {% for horta in hortas %}
+    <div class="col-md-4 horta-item" data-status="{{ horta.horta_ativa|lower }}" data-regiao="{{ horta.regiao }}">
+      <div class="card card-horta h-100">
+        <div class="card-header"><i class="fas fa-leaf me-2"></i>{{ horta.centro_saude }}</div>
+        <div class="card-body">
+          <p><strong>Responsável:</strong> {{ horta.responsavel }}</p>
+          <p><strong>Plantas:</strong> {{ horta.plantas_medicinais }}</p>
+          {% if horta.dia_grupo_horta %}<p><i class="fas fa-users me-1 text-primary"></i>{{ horta.dia_grupo_horta }}</p>{% endif %}
+          <div class="mt-3">
+            {% if horta.horta_ativa %}<span class="badge-ativa"><i class="fas fa-check-circle me-1"></i>Ativa</span>{% else %}<span class="badge-inativa"><i class="fas fa-times-circle me-1"></i>Inativa</span>{% endif %}
+            {% if horta.mutirao and horta.mutirao != 'Não' %}<span class="badge-multirao"><i class="fas fa-calendar me-1"></i>Mutirão: {{ horta.mutirao }}</span>{% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/hortas.js') }}"></script>
+{% endblock %}

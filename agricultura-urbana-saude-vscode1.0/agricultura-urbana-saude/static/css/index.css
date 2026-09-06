@@ -1,0 +1,4 @@
+/* Página inicial */
+.hero-title { color: var(--verde-escuro); }
+.hero-title i { color: var(--verde-claro); }
+.home-cards { margin-bottom: 2rem; }

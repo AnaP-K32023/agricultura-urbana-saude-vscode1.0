@@ -1,0 +1,109 @@
+Dashboard de Horta inspirado no Painel Vigidesastres
+___________________________________________________
+Dashboard Horta
+Endereço do Script:
+"Z:\VIG. SAUDE\Promoção da Saúde\1.1 AGRICULTURA URBANA\Dashboard_Hortas\Hortas nos CS\hortas_dash.py"
+_______________________
+
+
+
+
+Outro Script: Hortas nos Centros de Saúde.
+
+
+Deepseek:01/07/2026
+Estrutura do projeto:
+
+/horta_flask/
+├── app.py (hortas Dash.py) e rodar.
+├── requirements.txt
+├── /static/
+│   ├── /css/
+│   │   └── style.css
+│   ├── /js/
+│   │   └── mapa.js
+│   └── /data/
+│       ├── hortas.geojson
+│       └── hortas_dados.xlsx
+├── /templates/
+│   ├── base.html
+│   ├── index.html
+│   ├── mapa.html
+│   ├── hortas.html
+│   └── sobre.html
+└── /uploads/
+
+Flask==2.3.2
+pandas==2.0.3
+openpyxl==3.1.2
+folium==0.14.0
+geopandas==0.14.1
+shapely==2.0.1
+requests==2.31.0
+python-dotenv==1.0.0
+
+
+
+
+--------------------------------------------------
+08/07/2026
+Onde parei? Eu ia fazer as pastas.
+1º ve se ele roda igual. SIM
+2ªdepois fazer as pastas.
+
+Como editar? Abrir o template no vscode...base.html e editar no vscode.
+
+como roda? no terminal..digita....python hortas Dash.py
+para parar, fechar, crtl + C no terminal.
+
+-Sempre que for escrever algo, pedir ao deepseek como fazer pq precisa mudar em vários arquivos.
+
+Parei- pedi como pensamos em utilizar os mapas.
+Depois é ver como fazer o excel para que os dados fiquem o mais fidegno. E ainda colocar as visitas.
+
+Voltei em 29/07/2026 as 18:51h
+Voltei em 17/08/2026
+
+Mapa, funciona.
+Hortas...funciona
+Nossas hortas...ver com faz para atualizar.
+
+Ok, onde clicar? no segundo endereço do terminal: http://172.17.8.234:5000
+
+COMO FUNCIONA?
+
+- Hortas nos CS/
+  - static/          (CSS, imagens, JS)
+  - templates/       (HTMLs: base.html, index.html, hortas.html, mapa.html)
+  - hortas_dash.py   → ARQUIVO PRINCIPAL (onde está o app Flask)
+  - requirements.txt → dependências
+  - Dashboard Horta.txt (provavelmente dados brutos)
+
+O que faz cada rota (provavelmente):
+
+/ → index.html (página inicial)
+
+/hortas → hortas.html (lista das hortas)
+
+/mapa → mapa.html (visualização geográfica)
+
+Os dados provavelmente estão hardcoded dentro do hortas_dash.py ou lidos de um arquivo .txt/.csv na mesma pasta.
+
+FOCAR EM VER COMO PUBLICA..
+
+[https://agricultura-urbana-saude.onrender.com] nome escolhido
+fazer o deploy
+
+----> 🎉 Deu certo! O git push foi bem-sucedido! 🎉
+----> 🚀 Próximo passo: publicar no Render.com
+
+render: usei a conta anepol2023@gmail ( igual ao GIT)
+1º conecta no git e depois no render.
+
+como atualiza: meze so no código no VSCODE e no terminal:
+
+git add .
+git commit -m "Corrige grafia da palavra mutirão"
+git push origin main
+
+Assim que o terminal terminar de rodar e você ler To https://github.com/... e main -> main, o GitHub já recebeu o código.

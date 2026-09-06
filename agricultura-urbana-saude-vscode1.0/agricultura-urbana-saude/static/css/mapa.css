@@ -1,0 +1,4 @@
+/* Página do mapa */
+#map { height: 500px; border-radius: 15px; border: 2px solid var(--verde-pastel); overflow: hidden; }
+.custom-div-icon { background: transparent; border: 0; }
+@media (max-width: 768px) { #map { height: 400px; } }
